@@ -5,6 +5,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var origenesPermitidos = builder.Configuration.GetValue<string>("OrigenesPermitidos")!.Split(",");
+
+builder.Services.AddCors(opciones =>
+{
+opciones.AddDefaultPolicy(politica=>
+{
+    politica.WithOrigins("").AllowAnyHeader().AllowAnyMethod();
+});
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,6 +30,8 @@ var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
+
+app.UseCors();
 
 app.MapGet("/weatherforecast", () =>
 {
