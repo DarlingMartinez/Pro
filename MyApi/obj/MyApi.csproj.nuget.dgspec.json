@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/jose/Documentos/Pro/MyApi/MyApi.csproj": {}
+    "/home/fix/Documentos/Pro/MyApi/MyApi.csproj": {}
   },
   "projects": {
-    "/home/jose/Documentos/Pro/MyApi/MyApi.csproj": {
+    "/home/fix/Documentos/Pro/MyApi/MyApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jose/Documentos/Pro/MyApi/MyApi.csproj",
+        "projectUniqueName": "/home/fix/Documentos/Pro/MyApi/MyApi.csproj",
         "projectName": "MyApi",
-        "projectPath": "/home/jose/Documentos/Pro/MyApi/MyApi.csproj",
-        "packagesPath": "/home/jose/.nuget/packages/",
-        "outputPath": "/home/jose/Documentos/Pro/MyApi/obj/",
+        "projectPath": "/home/fix/Documentos/Pro/MyApi/MyApi.csproj",
+        "packagesPath": "/home/fix/.nuget/packages/",
+        "outputPath": "/home/fix/Documentos/Pro/MyApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/jose/.nuget/NuGet/NuGet.Config"
+          "/home/fix/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
