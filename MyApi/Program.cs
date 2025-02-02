@@ -1,37 +1,32 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
 
-var origenesPermitidos = builder.Configuration.GetValue<string>("OrigenesPermitidos")!.Split(",");
+var origenesPermitidos = builder.Configuration.GetValue<string>("Origenespermitidos")!.Split(",");
 
 builder.Services.AddCors(opciones =>
+{opciones.AddDefaultPolicy(politicas =>
 {
-opciones.AddDefaultPolicy(politica=>
-{
-    politica.WithOrigins(origenesPermitidos).AllowAnyHeader().AllowAnyMethod();
-});
-});
+    politicas.WithOrigins(origenesPermitidos).AllowAnyHeader().AllowAnyMethod();
+});}
+ );
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();
 }
-
+app.UseCors();
 app.UseHttpsRedirection();
 
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
-
-app.UseCors();
 
 app.MapGet("/weatherforecast", () =>
 {
@@ -45,8 +40,7 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+.WithName("GetWeatherForecast");
 
 app.Run();
 

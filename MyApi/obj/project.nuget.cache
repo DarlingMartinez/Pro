@@ -1,16 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6C946jx6Jj99bA+vozg/1LdffQbIb5MoeX6Ec33SGc7xSh8XHq8DaqY1ZTR4viFR3khs0S9pN25tMP6cOaP+hw==",
+  "dgSpecHash": "f6WNVFyO3H4=",
   "success": true,
   "projectFilePath": "/home/fix/Documentos/Pro/MyApi/MyApi.csproj",
   "expectedPackageFiles": [
-    "/home/fix/.nuget/packages/microsoft.aspnetcore.openapi/8.0.11/microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
-    "/home/fix/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "/home/fix/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
-    "/home/fix/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
-    "/home/fix/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
-    "/home/fix/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "/home/fix/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
+    "/home/fix/.nuget/packages/microsoft.aspnetcore.openapi/9.0.1/microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "/home/fix/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }
